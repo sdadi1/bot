@@ -9,7 +9,10 @@ with open('message.txt', 'r', encoding='utf-8') as f:
 		message = [int(line.strip().split('|')[0]), line.strip().split('|')[1], True]
 		if message not in message_list:
 			message_list.append(message)
-bot.send_message(chat_id, 'Я запущен!')
+
+battery = psutil.sensors_battery()
+percent = int(battery.percent)
+bot.send_message(chat_id, f'Я запущен!\nЗаряд батареи: {percent}')
 while True:
 	battery = psutil.sensors_battery()
 	percent = int(battery.percent)
