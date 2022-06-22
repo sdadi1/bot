@@ -22,7 +22,7 @@ pip install pytelegrambotapi
 clear
 
 # Sucsess
-cd tg-py-love
+cd bot
 mkdir users
 chmod +777 love
 cp love ~/love
