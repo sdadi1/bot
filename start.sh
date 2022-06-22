@@ -2,5 +2,5 @@
 
 # Run
 clear
-cd tg-py-love
+cd bot
 python3 main.py
